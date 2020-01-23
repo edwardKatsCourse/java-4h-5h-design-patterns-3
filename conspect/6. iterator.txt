@@ -1,0 +1,8 @@
+Iterator<String> {
+	String next();
+	boolean hasNext();
+}
+
+Iterable {
+	Iterator iterator();
+}

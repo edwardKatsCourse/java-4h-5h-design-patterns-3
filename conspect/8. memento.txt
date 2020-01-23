@@ -1,0 +1,28 @@
+private Person {
+	
+	private Person previousState; //12345
+	private String password;	//abcd
+	
+	
+	public Person changePassword(String password) {
+		this.previousState = this;
+		
+		boolean b = this == previousState; //true
+		return new Person(password);
+	}	
+	
+	public Person restorePreviousPassword() {
+		this = previousState;
+		return previousState;
+	}
+}
+
+public void main() {
+	Person p = new Person("12345");
+	p = p.changePassword("abcd"); //new Person
+	//p = this
+	//previousState = person with password "12345"
+	
+	p = p.restorePreviousPassword(); //12345
+	
+}

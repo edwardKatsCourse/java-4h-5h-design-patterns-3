@@ -1,0 +1,24 @@
+profiling - замер времени выполнения 
+
+//чей-то другой код (библиотеки), который мы не можем менять
+interface Executable {
+	void targetMethod();
+}
+
+class BaseClass implements Executable {
+
+}
+
+class MyBaseClass implements Executable {
+	private BaseClass bc;
+	//constructor
+	
+	public void targetMethod() {
+		//Decorator - всегдла вызывает targetMethod
+		//Proxy - может и не вызвать BaseClass.targetMethod
+		//может заменить BaseClass своей реализацией
+		start time
+			bs.targetMethod();
+		end time 
+	}
+}

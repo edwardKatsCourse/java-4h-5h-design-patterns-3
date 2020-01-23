@@ -1,0 +1,7 @@
+<body onclick="alert('abc')">
+	<div onclick="alert('abc')">
+		<div>
+			<img onclick="someMagic.callEvent.onclick()">
+		</div>
+	</div>
+</body>

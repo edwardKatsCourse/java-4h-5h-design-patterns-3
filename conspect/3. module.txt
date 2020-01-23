@@ -1,0 +1,20 @@
+model
+Dao - Data Access Object
+
+
+Old School (плохой)
+PersonDao					PersonSessionDao
+1. constructors
+2. getters/setters
+3. equals/hashCode/toString
+4. database connection
+5. table info
+
+JDBC -> plain SQL
+after 2009
+JPA	 -> JPQL
+
+6. SQL queries (select all, select some)
+7. SQL queries (update + nulls + not nulls)
+8. SQL queries (delete by id/email/lastname, since date)
+9. some singleton

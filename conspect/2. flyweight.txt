@@ -1,0 +1,24 @@
+public void main() {
+
+	//persons = 1000
+	//неправильно
+	for (Person person : persons) {
+		personRepository.save(person);
+		
+		1 sec * 1000 
+	}
+	
+	//flyweight
+	//правильно
+	personRepository.saveAll(persons);
+	2 sec
+}
+
+flyweight - использование cache
+String .subString()
+String largeString = 2MB
+String smallerPart (1.5MB) = largeString.substring()... много раз
+smallerPart = 2MB + ссылка 
+
+.toLowerCase = 2MB + 2MB
+
